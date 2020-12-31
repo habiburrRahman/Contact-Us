@@ -1,0 +1,112 @@
+*{margin: 0px; padding:0px}
+
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Universe Property and value */
+.container{
+    width:1140px;
+    margin:auto
+}
+
+/* Header of the page */
+.header{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px
+}
+.header ul li{
+    display:inline-block;
+    margin-right:20px;
+}
+.header ul li a{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+    font-size: 18px;
+}
+#active{
+    color:orange
+}
+.header ul li a:hover{
+    color:orange
+}
+
+/*Newsletter first Section */
+.section1{
+    background-color: #f5f5f5;
+    text-align:center;
+    padding:50px 0px 80px 0px 
+}
+.section1 h1{
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+    color: #2F323A;
+}
+.section1 p{
+    font-family: 'Poppins', sans-serif;
+    margin:50px 0px;
+    color:#6F6F6F;
+    font-size: 18px;
+}
+.section1 input{
+    width: 30%;
+    padding:15px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+.section1 input[type='submit']{
+    width: 15%;
+    background-color: black;
+    color:white;
+    border: 1px solid black;
+    cursor:pointer
+}
+.section1 input[type='submit']:hover,.section2 .input-2 input[type='submit']:hover{
+    background-color:#ff8100;
+    border: 1px solid #ff8100;
+}
+
+/* Newsletter second Section */
+.section2{
+    background-color: #EEE;
+    text-align:center;
+    padding:50px 0px 80px 0px
+}
+.section2 h1{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:#2F323A;
+    
+}
+.section2 p{
+    font-family: 'Poppins', sans-serif;
+    margin:50px 0px;
+    color:#6F6F6F;
+    font-size: 18px;
+}
+.section2 .input-1 input{
+    width:30%;
+    padding:15px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+ textarea{
+    background-color: transparent;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #ddd;
+    width: 62%;
+}
+.section2 .input-2{margin:0px;width: 48%;}
+.section2 .input-2 input[type="submit"]{
+    padding: 15px 20px;
+    background-color:black;
+    margin: 10px 15px 0px 0px;
+    color:white;
+    border: 1px solid black;
+    cursor:pointer;
+}
+
