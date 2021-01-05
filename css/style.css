@@ -1,112 +1,165 @@
-*{margin: 0px; padding:0px}
+*{margin:0px;padding:0px}
 
-/*Google Font*/
+/* google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Universe Property and value */
-.container{
-    width:1140px;
-    margin:auto
-}
-
-/* Header of the page */
 .header{
     background-color: black;
     text-align: center;
-    padding: 20px 0px
+    padding: 25px 0px;
 }
 .header ul li{
-    display:inline-block;
     margin-right:20px;
+    display:inline-block;
 }
 .header ul li a{
-    color:white;
-    font-family: 'Poppins', sans-serif;
+    color:whitesmoke;
+    font-size:18px;
     text-decoration:none;
-    font-size: 18px;
-}
-#active{
-    color:orange
+    font-family: 'Poppins', sans-serif;
+
 }
 .header ul li a:hover{
     color:orange
 }
+#active{color:orange}
 
-/*Newsletter first Section */
-.section1{
-    background-color: #f5f5f5;
-    text-align:center;
-    padding:50px 0px 80px 0px 
-}
-.section1 h1{
-    font-size:40px;
-    font-family: 'Roboto', sans-serif;
-    color: #2F323A;
-}
-.section1 p{
-    font-family: 'Poppins', sans-serif;
-    margin:50px 0px;
-    color:#6F6F6F;
-    font-size: 18px;
-}
-.section1 input{
-    width: 30%;
-    padding:15px;
-    background-color: transparent;
-    border: 1px solid #ddd;
-}
-.section1 input[type='submit']{
-    width: 15%;
-    background-color: black;
-    color:white;
-    border: 1px solid black;
-    cursor:pointer
-}
-.section1 input[type='submit']:hover,.section2 .input-2 input[type='submit']:hover{
-    background-color:#ff8100;
-    border: 1px solid #ff8100;
-}
 
-/* Newsletter second Section */
-.section2{
-    background-color: #EEE;
-    text-align:center;
-    padding:50px 0px 80px 0px
+/* Newsletter section */
+.section-news{
+    background-color:#f5f5f5;
+    padding:50px 0px 80px 0px;
+    text-align: center;
 }
-.section2 h1{
-    font-size: 40px;
+.container{
+    width:1140px;
+    margin:auto;
+}
+.container h1{
     font-family: 'Roboto', sans-serif;
+    font-size:42px;
     color:#2F323A;
-    
 }
-.section2 p{
+.container p{
     font-family: 'Poppins', sans-serif;
-    margin:50px 0px;
+    margin:20px 0px;
     color:#6F6F6F;
-    font-size: 18px;
-}
-.section2 .input-1 input{
-    width:30%;
-    padding:15px;
-    background-color: transparent;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-}
- textarea{
-    background-color: transparent;
-    padding: 15px 20px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid #ddd;
-    width: 62%;
-}
-.section2 .input-2{margin:0px;width: 48%;}
-.section2 .input-2 input[type="submit"]{
-    padding: 15px 20px;
-    background-color:black;
-    margin: 10px 15px 0px 0px;
-    color:white;
-    border: 1px solid black;
-    cursor:pointer;
+    line-height:20px;
+
 }
 
+input{
+    padding:15px 10px;
+    border:1px solid #ddd;
+    background-color:transparent;
+    width:30%;
+    outline:none;
+}
+input[type="submit"]{
+    padding:15px 10px;
+    border:1px solid #ddd;
+    background-color:transparent;
+    width:15%;
+    background-color: black;
+    color: whitesmoke;
+}
+input[type="submit"]:hover{
+    background: orange;
+}
+
+
+
+/* section-letstalk */
+.section-letstalk{
+    background-color:#EEE;
+    padding:50px 0px 80px 0px;
+    text-align: center;
+}
+.section-letstalk .input{
+    margin: 10px auto;
+}
+
+textarea {
+    width: 62%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom:5px;
+    outline:none;
+}
+.section-letstalk .submit{
+    float:left;
+    margin-left: 205px;
+}
+
+
+
+/* Footer section */
+.footer{
+    background-color:black;
+    padding:50px 0px 80px 0px;
+    color: #ddd;
+    font-family: 'Poppins', sans-serif; 
+}
+.footer p{
+    color: white;
+}
+
+.clmn-group{
+    display: flex;
+    justify-content: space-around;
+    margin:0px 0px 40px 0px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 40px;
+}
+.column h5{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.column li{
+    list-style: none;
+}
+.column a{
+    color:#ddd;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+}
+.links{
+    margin-bottom: 30px;
+}
+.links li{
+    border-right: 2px solid white;
+    display: inline-block;
+    margin-right:5px;
+    padding: 3px 0px;
+}
+.links li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+}
+.icon{margin: 20px 0px;}
+.icon li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background:orange ;
+
+}
+
+i{color: white;}
+.icon li:hover{
+   background-color: transparent;
+   border: 1px solid orange; 
+   transition: 0.5s ease;
+   transform: rotate(360deg);
+}
